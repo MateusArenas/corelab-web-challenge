@@ -3,6 +3,8 @@
 
 this pwa uses bootstrap as a styling base, axios api client and react-use-form form validation, and for searching it has a custom useDebounce hook
 
+![alt text](https://github.com/MateusArenas/corelab-web-challenge/blob/main/home.gif "Logo Title Text 1")
+
 ## APP WEB REACT Install dependences
 yarn or npm install
 
