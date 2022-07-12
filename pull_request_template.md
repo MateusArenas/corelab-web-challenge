@@ -37,11 +37,26 @@ this page as all vehicles usage search input and filter form set, has buttons fo
 | `minPrice` | `string` | Type to search vehicle for field price >= minPrice. |
 | `maxPrice` | `string` | Type to search vehicle for field price <= maxPrice. |
 
+#### Filter Page
+this page as filter form set.
+```Route
+  PAGE /filter
+```
+
+| Query   | Type       | Description                           |
+| :---------- | :--------- | :---------------------------------- |
+| `search` | `string` | Type to search vehicle for all field values, this uses collage full text search. |
+| `brand` | `string` | Type to search vehicle for brand field. |
+| `year` | `string` | Type to search vehicle for year field. |
+| `color` | `string` | Type to search vehicle for color field. |
+| `isFavorite` | `string` | Type to search vehicle for isFavorite field. |
+| `minPrice` | `string` | Type to search vehicle for field price >= minPrice. |
+| `maxPrice` | `string` | Type to search vehicle for field price <= maxPrice. |
 
 #### Add new Vehicle Page
 create vehicle passing fields in body request
 ```Route
-  PAGE /vehicles
+  PAGE /add-vehicle
 ```
 
 | Form Body   | Type       | Description                           |
@@ -58,7 +73,7 @@ create vehicle passing fields in body request
 #### Update Vehicle by Id Page
 update vehicle passing param id and fields in body request
 ```Route
-  PAGE /vehicles/:id
+  PAGE /edit-vehicle/:id
 ```
 
 | Parameter   | Type       | Description                           |
@@ -79,7 +94,7 @@ update vehicle passing param id and fields in body request
 #### Remove Vehicle by Id Page
 remove unique vehicle passing id
 ```Route
-  PAGE /vehicles/:id
+  PAGE /remove-vehicle/:id
 ```
 
 | Parameter   | Type       | Description                           |
